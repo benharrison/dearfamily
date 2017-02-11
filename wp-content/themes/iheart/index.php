@@ -60,7 +60,7 @@
                 </article>
             <?php endwhile; ?>
                 <div class="navigation">
-                    <?php posts_nav_link(); ?>
+                    <?php posts_nav_link('&nbsp;', '<strong>Previous Page</strong>', '<strong>Next Page</strong>'); ?>
                 </div>
             <?php else : ?>
                 <div class="post">

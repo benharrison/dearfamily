@@ -209,3 +209,39 @@ article blockquote a:hover
 {
     text-decoration:underline;
 }
+
+.navigation {
+    width:100%;
+
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.navigation a {
+    display:block;
+    background-image:url('../images/next-previous.png');
+    width:162px;
+    height:162px;
+}
+
+.navigation a strong {
+    display:none;
+}
+
+.navigation a:nth-child(1) {
+    float:left;
+}
+
+.navigation a:nth-child(1):hover {
+    background-position:0 -162px;
+}
+
+.navigation a:nth-child(2) {
+    float:right;
+    background-position:-162px 0;
+}
+
+.navigation a:nth-child(2):hover {
+    background-position:-162px -162px;
+}
